@@ -1,0 +1,220 @@
+# github.com/BurntSushi/toml v0.3.1
+github.com/BurntSushi/toml
+# github.com/StackExchange/wmi v0.0.0-20190523213315-cbe66965904d
+github.com/StackExchange/wmi
+# github.com/beorn7/perks v1.0.1
+github.com/beorn7/perks/quantile
+# github.com/cespare/xxhash/v2 v2.1.1
+github.com/cespare/xxhash/v2
+# github.com/cznic/mathutil v0.0.0-20181122101859-297441e03548
+github.com/cznic/mathutil
+# github.com/danjacques/gofslock v0.0.0-20191023191349-0a45f885bc37
+github.com/danjacques/gofslock/fslock
+# github.com/davecgh/go-spew v1.1.1
+github.com/davecgh/go-spew/spew
+# github.com/go-ole/go-ole v1.2.4
+github.com/go-ole/go-ole
+github.com/go-ole/go-ole/oleutil
+# github.com/gogo/protobuf v1.3.1
+github.com/gogo/protobuf/gogoproto
+github.com/gogo/protobuf/proto
+github.com/gogo/protobuf/protoc-gen-gogo/descriptor
+# github.com/golang/protobuf v1.3.4
+github.com/golang/protobuf/proto
+github.com/golang/protobuf/ptypes
+github.com/golang/protobuf/ptypes/any
+github.com/golang/protobuf/ptypes/duration
+github.com/golang/protobuf/ptypes/timestamp
+# github.com/konsorten/go-windows-terminal-sequences v1.0.3
+github.com/konsorten/go-windows-terminal-sequences
+# github.com/matttproud/golang_protobuf_extensions v1.0.1
+github.com/matttproud/golang_protobuf_extensions/pbutil
+# github.com/opentracing/opentracing-go v1.1.0
+github.com/opentracing/opentracing-go
+github.com/opentracing/opentracing-go/ext
+github.com/opentracing/opentracing-go/log
+# github.com/pingcap/errors v0.11.5-0.20201029093017-5a7df2af2ac7
+github.com/pingcap/errors
+# github.com/pingcap/kvproto v0.0.0-20201023092649-e6d6090277c9
+github.com/pingcap/kvproto/pkg/encryptionpb
+github.com/pingcap/kvproto/pkg/eraftpb
+github.com/pingcap/kvproto/pkg/metapb
+github.com/pingcap/kvproto/pkg/pdpb
+github.com/pingcap/kvproto/pkg/replication_modepb
+# github.com/pingcap/log v0.0.0-20200828042413-fce0951f1463
+github.com/pingcap/log
+# github.com/pingcap/parser v0.0.0-20201112065012-c9380f220ff9
+## explicit
+github.com/pingcap/parser
+github.com/pingcap/parser/ast
+github.com/pingcap/parser/auth
+github.com/pingcap/parser/charset
+github.com/pingcap/parser/format
+github.com/pingcap/parser/model
+github.com/pingcap/parser/mysql
+github.com/pingcap/parser/opcode
+github.com/pingcap/parser/terror
+github.com/pingcap/parser/test_driver
+github.com/pingcap/parser/types
+# github.com/pingcap/tidb v1.1.0-beta.0.20201113172225-f9f44d0a492a
+## explicit
+github.com/pingcap/tidb/config
+github.com/pingcap/tidb/errno
+github.com/pingcap/tidb/sessionctx/stmtctx
+github.com/pingcap/tidb/types
+github.com/pingcap/tidb/types/json
+github.com/pingcap/tidb/types/parser_driver
+github.com/pingcap/tidb/util/collate
+github.com/pingcap/tidb/util/dbterror
+github.com/pingcap/tidb/util/disk
+github.com/pingcap/tidb/util/execdetails
+github.com/pingcap/tidb/util/hack
+github.com/pingcap/tidb/util/logutil
+github.com/pingcap/tidb/util/math
+github.com/pingcap/tidb/util/memory
+github.com/pingcap/tidb/util/parser
+github.com/pingcap/tidb/util/stringutil
+github.com/pingcap/tidb/util/versioninfo
+# github.com/pingcap/tipb v0.0.0-20201026044621-45e60c77588f
+github.com/pingcap/tipb/go-tipb
+github.com/pingcap/tipb/sharedbytes
+# github.com/pkg/errors v0.9.1
+github.com/pkg/errors
+# github.com/pmezard/go-difflib v1.0.0
+github.com/pmezard/go-difflib/difflib
+# github.com/prometheus/client_golang v1.5.1
+github.com/prometheus/client_golang/prometheus
+github.com/prometheus/client_golang/prometheus/internal
+# github.com/prometheus/client_model v0.2.0
+github.com/prometheus/client_model/go
+# github.com/prometheus/common v0.9.1
+github.com/prometheus/common/expfmt
+github.com/prometheus/common/internal/bitbucket.org/ww/goautoneg
+github.com/prometheus/common/model
+# github.com/prometheus/procfs v0.0.8
+github.com/prometheus/procfs
+github.com/prometheus/procfs/internal/fs
+github.com/prometheus/procfs/internal/util
+# github.com/remyoudompheng/bigfft v0.0.0-20200410134404-eec4a21b6bb0
+github.com/remyoudompheng/bigfft
+# github.com/shirou/gopsutil v2.20.3+incompatible
+github.com/shirou/gopsutil/internal/common
+github.com/shirou/gopsutil/mem
+# github.com/sirupsen/logrus v1.6.0
+github.com/sirupsen/logrus
+# github.com/stretchr/testify v1.5.1
+## explicit
+github.com/stretchr/testify/assert
+# github.com/tikv/pd v1.1.0-beta.0.20200910042021-254d1345be09
+github.com/tikv/pd/client
+github.com/tikv/pd/pkg/errs
+github.com/tikv/pd/pkg/grpcutil
+# github.com/uber/jaeger-client-go v2.22.1+incompatible
+github.com/uber/jaeger-client-go
+github.com/uber/jaeger-client-go/config
+github.com/uber/jaeger-client-go/internal/baggage
+github.com/uber/jaeger-client-go/internal/baggage/remote
+github.com/uber/jaeger-client-go/internal/reporterstats
+github.com/uber/jaeger-client-go/internal/spanlog
+github.com/uber/jaeger-client-go/internal/throttler
+github.com/uber/jaeger-client-go/internal/throttler/remote
+github.com/uber/jaeger-client-go/log
+github.com/uber/jaeger-client-go/rpcmetrics
+github.com/uber/jaeger-client-go/thrift
+github.com/uber/jaeger-client-go/thrift-gen/agent
+github.com/uber/jaeger-client-go/thrift-gen/baggage
+github.com/uber/jaeger-client-go/thrift-gen/jaeger
+github.com/uber/jaeger-client-go/thrift-gen/sampling
+github.com/uber/jaeger-client-go/thrift-gen/zipkincore
+github.com/uber/jaeger-client-go/transport
+github.com/uber/jaeger-client-go/utils
+# github.com/uber/jaeger-lib v2.4.0+incompatible
+github.com/uber/jaeger-lib/metrics
+# go.etcd.io/etcd v0.5.0-alpha.5.0.20191023171146-3cf2f69b5738
+go.etcd.io/etcd/pkg/tlsutil
+go.etcd.io/etcd/pkg/transport
+# go.uber.org/atomic v1.7.0
+go.uber.org/atomic
+# go.uber.org/multierr v1.6.0
+go.uber.org/multierr
+# go.uber.org/zap v1.16.0
+go.uber.org/zap
+go.uber.org/zap/buffer
+go.uber.org/zap/internal/bufferpool
+go.uber.org/zap/internal/color
+go.uber.org/zap/internal/exit
+go.uber.org/zap/zapcore
+# golang.org/x/net v0.0.0-20200904194848-62affa334b73
+golang.org/x/net/context
+golang.org/x/net/http/httpguts
+golang.org/x/net/http2
+golang.org/x/net/http2/hpack
+golang.org/x/net/idna
+golang.org/x/net/internal/timeseries
+golang.org/x/net/trace
+# golang.org/x/sync v0.0.0-20200625203802-6e8e738ad208
+golang.org/x/sync/singleflight
+# golang.org/x/sys v0.0.0-20200819171115-d785dc25833f
+golang.org/x/sys/internal/unsafeheader
+golang.org/x/sys/unix
+golang.org/x/sys/windows
+# golang.org/x/text v0.3.4
+golang.org/x/text/encoding
+golang.org/x/text/encoding/charmap
+golang.org/x/text/encoding/internal
+golang.org/x/text/encoding/internal/identifier
+golang.org/x/text/encoding/japanese
+golang.org/x/text/encoding/korean
+golang.org/x/text/encoding/simplifiedchinese
+golang.org/x/text/encoding/traditionalchinese
+golang.org/x/text/encoding/unicode
+golang.org/x/text/internal/utf8internal
+golang.org/x/text/runes
+golang.org/x/text/secure/bidirule
+golang.org/x/text/transform
+golang.org/x/text/unicode/bidi
+golang.org/x/text/unicode/norm
+# google.golang.org/genproto v0.0.0-20200108215221-bd8f9a0ef82f
+google.golang.org/genproto/googleapis/rpc/status
+# google.golang.org/grpc v1.26.0
+google.golang.org/grpc
+google.golang.org/grpc/attributes
+google.golang.org/grpc/backoff
+google.golang.org/grpc/balancer
+google.golang.org/grpc/balancer/base
+google.golang.org/grpc/balancer/roundrobin
+google.golang.org/grpc/binarylog/grpc_binarylog_v1
+google.golang.org/grpc/codes
+google.golang.org/grpc/connectivity
+google.golang.org/grpc/credentials
+google.golang.org/grpc/credentials/internal
+google.golang.org/grpc/encoding
+google.golang.org/grpc/encoding/gzip
+google.golang.org/grpc/encoding/proto
+google.golang.org/grpc/grpclog
+google.golang.org/grpc/internal
+google.golang.org/grpc/internal/backoff
+google.golang.org/grpc/internal/balancerload
+google.golang.org/grpc/internal/binarylog
+google.golang.org/grpc/internal/buffer
+google.golang.org/grpc/internal/channelz
+google.golang.org/grpc/internal/envconfig
+google.golang.org/grpc/internal/grpcrand
+google.golang.org/grpc/internal/grpcsync
+google.golang.org/grpc/internal/resolver/dns
+google.golang.org/grpc/internal/resolver/passthrough
+google.golang.org/grpc/internal/syscall
+google.golang.org/grpc/internal/transport
+google.golang.org/grpc/keepalive
+google.golang.org/grpc/metadata
+google.golang.org/grpc/naming
+google.golang.org/grpc/peer
+google.golang.org/grpc/resolver
+google.golang.org/grpc/serviceconfig
+google.golang.org/grpc/stats
+google.golang.org/grpc/status
+google.golang.org/grpc/tap
+# gopkg.in/natefinch/lumberjack.v2 v2.0.0
+gopkg.in/natefinch/lumberjack.v2
+# gopkg.in/yaml.v2 v2.2.8
+gopkg.in/yaml.v2
