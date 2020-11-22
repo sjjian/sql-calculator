@@ -310,8 +310,8 @@ func (c *VirtualDB) mergeAlterToTable(oldTable *ast.CreateTableStmt,
 			for _, col := range tmpTable.Cols {
 				if columnName == col.Name.Name.L {
 					colExist = true
+					break
 				}
-				break
 			}
 			if colExist {
 				return nil, fmt.Errorf(DuplicateColumnErrorPattern,
@@ -404,8 +404,8 @@ func (c *VirtualDB) mergeAlterToTable(oldTable *ast.CreateTableStmt,
 			for _, constraint := range tmpTable.Constraints {
 				if indexName == constraint.Name {
 					constraintExists = true
+					break
 				}
-				break
 			}
 			if constraintExists {
 				return nil, fmt.Errorf(DuplicateIndexErrorPattern,
@@ -477,4 +477,28 @@ func (c *VirtualDB) Text() (string, error) {
 		}
 	}
 	return sb.String(), nil
+}
+
+func (c *VirtualDB) GetTableStmts(schemaName string) (map[string]*TableInfo, bool) {
+	schema, exist := c.getSchema(schemaName)
+	if !exist {
+		return nil, false
+	}
+	return schema.Tables, true
+}
+
+func (c *VirtualDB) GetColumn(schemaName, tableName, columnName string) (*ast.ColumnDef, bool, error) {
+	table, exist, err := c.getTable(schemaName, tableName)
+	if err != nil {
+		return nil, false, err
+	}
+	if !exist {
+		return nil, false, fmt.Errorf(NotExistTableErrorPattern, schemaName, tableName)
+	}
+	for _, col := range table.Table.Cols {
+		if col.Name.String() == columnName {
+			return col, true, nil
+		}
+	}
+	return nil, false, nil
 }
