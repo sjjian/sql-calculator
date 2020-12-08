@@ -28,6 +28,26 @@ func TestFingerprint(t *testing.T) {
 			input:  `select a from tb1 where b in (1,2,3)`,
 			expect: "SELECT `a` FROM `tb1` WHERE `b` IN (?,?,?)",
 		},
+		{
+			input:  `select sleep(5)`,
+			expect: "SELECT SLEEP(?)",
+		},
+		{
+			input:  `select 1`,
+			expect: "SELECT ?",
+		},
+		{
+			input:  `select * from tb1 limit 10`,
+			expect: "SELECT * FROM `tb1` LIMIT ?",
+		},
+		{
+			input:  `select * from tb1 limit 10,10`,
+			expect: "SELECT * FROM `tb1` LIMIT ?,?",
+		},
+		{
+			input:  `select * from tb1 limit 10 offset 10`,
+			expect: "SELECT * FROM `tb1` LIMIT ?,?",
+		},
 	}
 	for _, c := range cases {
 		testFingerprint(t, c.input, c.expect)
