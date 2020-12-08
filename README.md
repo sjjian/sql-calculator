@@ -28,6 +28,8 @@ Flags:
   -h, --help   help for fp
 
 ```
+### 2. 与 SOAR 对比
+SOAR(https://github.com/XiaoMi/soar/blob/dev/cmd/soar/soar.go) 使用的是 percona 的 fingerprint (https://github.com/percona/go-mysql/blob/master/query/query.go#L151) 这个库是基于字符串匹配，无法处理子查询的情况。相比来说基于词法解析的方式实现能够支持更复杂的语句。
 ## 数据库库表对比
 ### 1. 支持
 * 表：增，删
