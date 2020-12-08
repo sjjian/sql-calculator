@@ -4,12 +4,17 @@ import (
 	"github.com/pingcap/parser"
 	"github.com/pingcap/parser/ast"
 	"github.com/pingcap/parser/format"
+	_ "github.com/pingcap/tidb/types/parser_driver"
 	"strings"
 )
 
 func RestoreToSql(stmt ast.Node) (string, error) {
+	return RestoreToSqlWithFlag(format.DefaultRestoreFlags, stmt)
+}
+
+func RestoreToSqlWithFlag(flag format.RestoreFlags, stmt ast.Node) (string, error) {
 	var sb strings.Builder
-	ctx := format.NewRestoreCtx(format.DefaultRestoreFlags, &sb)
+	ctx := format.NewRestoreCtx(flag, &sb)
 	err := stmt.Restore(ctx)
 	if err != nil {
 		return "", err

@@ -34,7 +34,7 @@ alter table db1.t1 add column name varchar(255);
 alter table t1 add index idx_id(id);
 `,
 		"CREATE DATABASE `db1`;\n"+
-			"CREATE TABLE `db1`.`t1` (`id` INT,`name` VARCHAR(255));\n",
+			"CREATE TABLE `db1`.`t1` (`id` INT,`name` VARCHAR(255),INDEX `idx_id`(`id`));\n",
 		"",
 	)
 }

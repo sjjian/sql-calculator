@@ -3,6 +3,7 @@ package diff
 import (
 	"fmt"
 	"github.com/pingcap/parser/ast"
+	_ "github.com/pingcap/tidb/types/parser_driver"
 	"sql-calculator/utils"
 	"sql-calculator/virtualdb"
 )
