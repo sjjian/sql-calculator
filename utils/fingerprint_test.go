@@ -24,6 +24,10 @@ func TestFingerprint(t *testing.T) {
 			input:  `delete from tb1 where a="2"`,
 			expect: "DELETE FROM `tb1` WHERE `a`=?",
 		},
+		{
+			input:  `select a from tb1 where b in (1,2,3)`,
+			expect: "SELECT `a` FROM `tb1` WHERE `b` IN (?,?,?)",
+		},
 	}
 	for _, c := range cases {
 		testFingerprint(t, c.input, c.expect)
@@ -31,10 +35,10 @@ func TestFingerprint(t *testing.T) {
 }
 
 func testFingerprint(t *testing.T, input, expect string) {
-	acutal, err := Fingerprint(input)
+	actual, err := Fingerprint(input)
 	assert.NoError(t, err)
 	if err != nil {
 		return
 	}
-	assert.Equal(t, expect, acutal)
+	assert.Equal(t, expect, actual)
 }
